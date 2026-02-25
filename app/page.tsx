@@ -34,7 +34,7 @@ export default function Home() {
             className="flex flex-col items-center justify-center -mt-32"
           >
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white/90 drop-shadow-2xl">
-              O SEGREDO DE <span className="text-alypios-accent italic pr-2">ALYPIOS</span>
+              O SEGREDO DO <span className="text-alypios-accent italic pr-2">ALYPIOS</span>
             </h1>
             <p className="mt-6 text-xl md:text-2xl font-sans text-white/60 font-light tracking-wide max-w-xl text-center">
               A tradition poured with intention.
