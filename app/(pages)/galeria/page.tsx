@@ -45,13 +45,12 @@ export default function GaleriaPage() {
                         >
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
 
-                            {/* Note: Using unoptimized img tag due to Next.js strict remotePatterns for next/image unless configured in next.config.mjs */}
-                            {/* For production, next.config.mjs requires the hostname site2.megatic.pt */}
-                            <img
+                            {/* Note: Upgraded to next/image for production build optimization */}
+                            <Image
                                 src={image.src}
                                 alt={image.alt}
-                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                                loading="lazy"
+                                fill
+                                className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                             />
 
                             {/* Optional Hover Overlay Text */}
