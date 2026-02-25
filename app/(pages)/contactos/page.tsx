@@ -59,7 +59,7 @@ export default function ContactosPage() {
                         className="flex flex-col gap-12"
                     >
                         {/* Bragança 1 */}
-                        <a href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Alypios+R.+Combatentes+da+Grande+Guerra+209,+5300-106+Bragança" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
+                        <a href="https://maps.app.goo.gl/uXLZL27kEQKYp5aX9" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
                             <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-alypios-accent/50 group-hover:bg-alypios-accent/10 transition-colors">
                                 <MapPin className="text-alypios-accent" size={28} />
                             </div>
@@ -78,7 +78,7 @@ export default function ContactosPage() {
                         </a>
 
                         {/* Bragança 2 */}
-                        <a href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Alypios+Polo+2+R.+Cmte.+Sacadura+Cabral+163+A,+5300-106+Bragança" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
+                        <a href="https://maps.app.goo.gl/kkqAxGcaVBHCi7Hx9" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
                             <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-alypios-accent/50 group-hover:bg-alypios-accent/10 transition-colors">
                                 <MapPin className="text-alypios-accent" size={28} />
                             </div>
