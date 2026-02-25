@@ -59,13 +59,13 @@ export default function ContactosPage() {
                         className="flex flex-col gap-12"
                     >
                         {/* Bragança 1 */}
-                        <div className="flex gap-6 items-start group">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Alypios+R.+Combatentes+da+Grande+Guerra+209,+5300-106+Bragança" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
                             <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-alypios-accent/50 group-hover:bg-alypios-accent/10 transition-colors">
                                 <MapPin className="text-alypios-accent" size={28} />
                             </div>
                             <div>
                                 <h4 className="font-serif text-2xl text-white mb-2 group-hover:text-alypios-accent transition-colors">Bragança</h4>
-                                <p className="font-sans text-white/60 mb-4">R. Combatentes da Grande Guerra 209,<br />5300-106 Bragança</p>
+                                <p className="font-sans text-white/60 mb-4 group-hover:text-white/80 transition-colors">R. Combatentes da Grande Guerra 209,<br />5300-106 Bragança</p>
                                 <div className="flex items-start gap-3 mt-4">
                                     <Clock className="text-white/40 mt-1 shrink-0" size={18} />
                                     <div className="font-sans text-sm text-white/50">
@@ -75,16 +75,16 @@ export default function ContactosPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                         {/* Bragança 2 */}
-                        <div className="flex gap-6 items-start group">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Alypios+Polo+2+R.+Cmte.+Sacadura+Cabral+163+A,+5300-106+Bragança" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
                             <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-alypios-accent/50 group-hover:bg-alypios-accent/10 transition-colors">
                                 <MapPin className="text-alypios-accent" size={28} />
                             </div>
                             <div>
                                 <h4 className="font-serif text-2xl text-white mb-2 group-hover:text-alypios-accent transition-colors">Bragança (Polo 2)</h4>
-                                <p className="font-sans text-white/60 mb-4">R. Cmte. Sacadura Cabral 163 A,<br />5300-106 Bragança</p>
+                                <p className="font-sans text-white/60 mb-4 group-hover:text-white/80 transition-colors">R. Cmte. Sacadura Cabral 163 A,<br />5300-106 Bragança</p>
                                 <div className="flex items-start gap-3 mt-4">
                                     <Clock className="text-white/40 mt-1 shrink-0" size={18} />
                                     <div className="font-sans text-sm text-white/50">
@@ -94,16 +94,16 @@ export default function ContactosPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                         {/* Viseu */}
-                        <div className="flex gap-6 items-start group">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Alypios+Viseu+R.+Prebenda+37,+3500-173+Viseu" target="_blank" rel="noopener noreferrer" className="flex gap-6 items-start group cursor-pointer block">
                             <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-alypios-accent/50 group-hover:bg-alypios-accent/10 transition-colors">
                                 <MapPin className="text-alypios-accent" size={28} />
                             </div>
                             <div>
                                 <h4 className="font-serif text-2xl text-white mb-2 group-hover:text-alypios-accent transition-colors">Viseu</h4>
-                                <p className="font-sans text-white/60 mb-4">R. Prebenda 37,<br />3500-173 Viseu</p>
+                                <p className="font-sans text-white/60 mb-4 group-hover:text-white/80 transition-colors">R. Prebenda 37,<br />3500-173 Viseu</p>
                                 <div className="flex items-start gap-3 mt-4">
                                     <Clock className="text-white/40 mt-1 shrink-0" size={18} />
                                     <div className="font-sans text-sm text-white/50">
@@ -112,7 +112,7 @@ export default function ContactosPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                     </motion.div>
                 </div>
