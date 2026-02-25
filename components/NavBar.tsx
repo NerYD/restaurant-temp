@@ -37,7 +37,7 @@ export default function NavBar() {
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 group">
-                        <div className="relative w-32 h-12 md:w-40 md:h-16 transition-transform duration-300 group-hover:scale-105">
+                        <div className="relative w-44 h-16 md:w-60 md:h-20 transition-transform duration-300 group-hover:scale-105">
                             <Image
                                 src="/alypios_logo.webp"
                                 alt="Cervejaria Alypios Logo"
