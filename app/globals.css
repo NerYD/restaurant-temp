@@ -2,26 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #050505;
+    --foreground: #FAFAF9;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased font-sans selection:bg-alypios-accent selection:text-white;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+
+  /* Focus States for Interactive Elements */
+  a,
+  button,
+  input {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alypios-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#050505] transition-shadow;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    @apply bg-alypios-accent text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-out cursor-pointer;
+  }
+
+  .btn-primary:hover {
+    @apply opacity-90 -translate-y-[2px] scale-[1.02] shadow-xl;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply bg-transparent text-white border-2 border-white/20 px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-out cursor-pointer;
+  }
+
+  .btn-secondary:hover {
+    @apply border-alypios-accent bg-white/5 -translate-y-[2px] scale-[1.02] shadow-lg;
+  }
+
+  /* Glass Card */
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 transition-all duration-300 cursor-pointer;
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-glass:hover {
+    @apply border-alypios-accent/50 -translate-y-2;
+    box-shadow: 0 20px 25px -5px rgba(202, 138, 4, 0.1), 0 8px 10px -6px rgba(202, 138, 4, 0.1);
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Custom Scrollbar - Golden Orange Track */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CA8A04;
+  /* Updated to CTA color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a16207;
 }
